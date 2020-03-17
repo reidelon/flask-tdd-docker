@@ -1,5 +1,9 @@
 Flask==1.1.1
 Flask-RESTPlus==0.13.0
+
 #this Werkzeug version is need because Flask-RESTPlus==0.13.0 have a import problem with cached_property
 #which is in werkzeug.utils module
 Werkzeug==0.16.1
+
+Flask-SQLAlchemy==2.4.1
+psycopg2-binary==2.8.4
