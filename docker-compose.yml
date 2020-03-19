@@ -20,7 +20,7 @@ services:
       - users-db
   users-db:
     build:
-      context: ./project/db
+      context: ./project/db1
       dockerfile: Dockerfile
     expose:
       - 5432

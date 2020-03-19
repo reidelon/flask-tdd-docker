@@ -9,6 +9,7 @@ db = SQLAlchemy()
 
 
 def create_app(script_info=None):
+    from project.api.users import users_blueprint
     # import pdb; pdb.set_trace()
     # instantiate the app
     app = Flask(__name__)
@@ -29,4 +30,5 @@ def create_app(script_info=None):
     def ctx():
         return {'app': app, 'db': db}
 
+    app.register_blueprint(users_blueprint)
     return app
